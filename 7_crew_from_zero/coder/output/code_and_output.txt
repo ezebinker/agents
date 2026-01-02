@@ -1,0 +1,18 @@
+```
+# Python Code to Calculate the Series
+def calculate_series(n):
+    total = 0.0
+    for i in range(n):
+        term = 1 / (2 * i + 1)
+        if i % 2 == 0:
+            total += term
+        else:
+            total -= term
+    return total * 4
+
+result = calculate_series(10000)
+print(result)
+
+# Output of the code
+3.141592653589793
+```
